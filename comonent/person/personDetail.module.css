@@ -1,0 +1,36 @@
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.content {
+  font-size: large;
+  padding-top: 10px;
+}
+
+.header {
+  background-color: #2a2a2a;
+  padding: 20px;
+}
+
+.financial {
+  background-color: #2a2a2a;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.financailUl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.financialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: aliceblue;
+}

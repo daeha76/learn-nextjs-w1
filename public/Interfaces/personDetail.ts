@@ -1,4 +1,4 @@
-export default interface personDetailInterface {
+export interface personDetailInterface {
   id: string;
   state: string;
   city: string;
@@ -14,11 +14,12 @@ export default interface personDetailInterface {
   netWorth: number;
 }
 
-interface financialAssetInterface {
+export interface financialAssetInterface {
   exchange: string;
   ticker: string;
   companyName: string;
   numberOfShares: number;
+  exerciseOptionPrice: number;
   sharePrice: number;
   currencyCode: string;
   exchangeRate: number;

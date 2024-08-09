@@ -1,14 +1,14 @@
+import { PersonThumbnail } from "@/comonent/person/person";
 import personInterface from "@/public/Interfaces/person";
-import Link from "next/link";
+import styles from "./app.module.css";
 
 export const metadata = {
-  title: "Persons",
+  title: "Billions",
 };
 
 export const URL = "https://billions-api.nomadcoders.workers.dev/";
 
 async function getPersons() {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
   const response = await fetch(URL);
   const json = await response.json();
   return json;
@@ -17,10 +17,10 @@ async function getPersons() {
 export default async function PersonsPage() {
   const persons: personInterface[] = await getPersons();
   return (
-    <ul>
+    <ul className={styles.personUl}>
       {persons.map((person) => (
-        <li key={person.id}>
-          <Link href={`/person/${person.id}`}>{person.name}</Link>
+        <li key={person.id} className={styles.personLi}>
+          <PersonThumbnail person={person} />
         </li>
       ))}
     </ul>
