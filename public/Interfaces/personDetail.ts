@@ -3,7 +3,7 @@ export interface personDetailInterface {
   state: string;
   city: string;
   name: string;
-  contry: string;
+  country: string;
   position: number;
   industries: string[];
   financialAssets: financialAssetInterface[];

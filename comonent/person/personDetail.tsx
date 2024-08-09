@@ -41,7 +41,7 @@ export const PersonDetailThumbnail = ({
         <p className={styles.content}>
           Networth: {personDetail.netWorth / 1000} Billion
         </p>
-        <p className={styles.content}>Country: {personDetail.contry}</p>
+        <p className={styles.content}>Country: {personDetail.country}</p>
         <p className={styles.content}>Industry: {personDetail.industries}</p>
         <p className={styles.content}>{personDetail.bio}</p>
       </div>

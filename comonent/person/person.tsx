@@ -10,8 +10,8 @@ export const PersonThumbnail = ({ person }: { person: personInterface }) => {
       <Image
         src={ImageScr}
         alt={`${person.name} image`}
-        width={400}
-        height={400}
+        width={250}
+        height={250}
       />
       {person.name}
     </Link>
